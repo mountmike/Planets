@@ -1,0 +1,20 @@
+<div class="detail-wrapper">
+    
+    <article>
+        <h2><%= planet.name %></h2>
+        <p>Diamter: <%= planet.diameter %>Kms</p>
+        <p>Mass: <%= planet.mass %> Earths</p>
+        <p>Moon count: <%= planet.moon_count %></p>
+    </article>
+    
+    <div class="btn-wrapper">
+        <form action="/planets/<%= planet.id %>" method="post">
+            <input type="hidden" name="_method" value="delete">
+            <input type="hidden" name="planetID" value="<%= planet.id %>">
+            <button class="planet-btns">delete</button>
+        </form>
+        <a class="planet-btns" href="/planets/<%= planet.id %>/edit">edit</a>
+    </div>
+    
+    <img class="detail-img" src="<%= planet.image_url %>" alt="">
+</div>

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100;200;300;400;500;600;700;800&family=Rubik+Iso&display=swap');
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Genos';
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.session-box {
+    position: absolute;
+    display: flex;
+    top: 10px;
+    right: 10px;
+}
+
+#welcomeMsg {
+    border-right: solid white 1px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+nav > ul {
+    margin: 0 0 0 -40px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav > ul > li {
+    margin: 10px;
+    padding: 0;
+}
+
+a {
+    color: white;
+    margin: 0;
+}
+
+a:hover {
+    color: blue;
+}
+
+button:hover {
+    color: blue;
+}
+
+h1, h2 {
+    font-family: 'Rubik Iso';
+}
+
+main {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article > img {
+    width: 50%;
+}
+
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+button {
+	background: none;
+	color: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: none;
+}
+
+.planet-btns {
+    background-color: aliceblue;
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.gravity-well {
+    border: 1px solid grey;
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+    animation: spin-right 10s linear infinite;
+  }
+  .planet {
+    width: 1em;
+    height: 1em;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+      left: 50%;
+      top: -0.5rem;
+  }
+  
+  @keyframes spin-right {
+    100% { transform: rotate(-360deg); }
+  }
+  

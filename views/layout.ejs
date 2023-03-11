@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets App | <%= title %></title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div class="session-box">
+            <span id="welcomeMsg">Welcome <%= user %></span>
+            <a href="/sessions/logout">logout</a>
+        </div>
+        <h1>PLANETS APP</h1>
+        <nav>
+            <ul>
+                <li><a href="/home">HOME</a></li>
+                <li><a href="/planets">SEE PLANETS</a></li>
+                <li><a href="/planets/new">ADD PLANET</a></li>
+                <li><a href="">ABOUT</a></li>
+            </ul>
+        </nav>   
+    </header>
+    <main>
+        <%- body %>
+    </main>
+    <footer>
+        <p>&copy; Michael Tharratt 2023</p>
+    </footer>
+</body>
+</html>

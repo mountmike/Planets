@@ -1,0 +1,8 @@
+<% for (let planet of planets) { %>
+    <a href="/planets/<%= planet.id %>">
+        <article>
+            <h2><%= planet.name %></h2>
+            <img src="<%= planet.image_url %>" alt="">
+        </article>
+    </a>
+    <% } %>

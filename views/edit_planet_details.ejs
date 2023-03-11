@@ -1,0 +1,17 @@
+<article>
+    <h2>Edit Planet</h2>
+    <form action="/planets/<%= planet.id %>" method="post">
+        <input type="hidden" name="_method" value="put">
+        <label for="name">name</label>
+        <input type="text" name="name" value="<%= planet.name %>">
+        <label for="diameter">diameter</label>
+        <input type="text" name="diameter" value="<%= planet.diameter %>">
+        <label for="mass">mass</label>
+        <input type="text" name="mass" value="<%= planet.mass %>">
+        <label for="moon_count">moon count</label>
+        <input type="text" name="moon_count" value="<%= planet.moon_count %>">
+        <label for="image_url">image url</label>
+        <input type="text" name="image_url" value="<%= planet.image_url %>">
+        <button class="planet-btns">update</button>
+    </form>
+</article>
