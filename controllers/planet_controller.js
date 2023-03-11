@@ -7,9 +7,9 @@ const db = new Pool({
 
 // Get all planets | planets home page
 router.get("/", (req, res) => {
-    if (!req.session.userID) {
-        res.redirect("/sessions/login")
-    } else {
+    // if (!req.session.userID) {
+    //     res.redirect("/sessions/login")
+    // } else {
         let sql = "select * from planets order by id asc;";
         db.query(sql, (err, dbResponse) => {
             if (err) {
@@ -19,7 +19,7 @@ router.get("/", (req, res) => {
                 res.render("all_planets", { planets, title: "See All Planets", user: req.session.email })
             } 
         });
-    }
+    // }
 });
 // Get form for adding new planet
 router.get("/new", (req, res) => {
