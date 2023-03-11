@@ -1,8 +1,15 @@
 const express = require("express");
 const router = express.Router();
 const { Pool } = require("pg")
+const connectionString = 'postgres://planets_app_user:joLTSA83h7sVmESHo9ECwedf3xL84McS@dpg-cg649ed269v5l64n0fig-a/planets_app'
 const db = new Pool({
-    database: "planets_app",
+    connectionString: connectionString,
+    user: 'planets_app_user',
+    host: 'dpg-cg649ed269v5l64n0fig-a',
+    hostname: 'dpg-cg649ed269v5l64n0fig-a',
+    database: 'planets_app',
+    password: 'joLTSA83h7sVmESHo9ECwedf3xL84McS',
+    port: 5432,
 });
 
 // Get all planets | planets home page
