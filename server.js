@@ -4,7 +4,11 @@ const PORT = process.env.PORT;
 const expressLayouts = require("express-ejs-layouts");
 const { Pool } = require("pg")
 const db = new Pool({
-    database: "planets_app",
+    user: 'planets_app_user',
+    host: 'dpg-cg649ed269v5l64n0fig-a',
+    database: 'planets_app',
+    password: 'joLTSA83h7sVmESHo9ECwedf3xL84McS',
+    port: 5432,
 });
 const methodOverride = require("method-override");
 const planetController = require("./controllers/planet_controller");
