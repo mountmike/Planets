@@ -5,7 +5,8 @@ const expressLayouts = require("express-ejs-layouts");
 const { Pool } = require("pg")
 const db = new Pool({
     user: 'planets_app_user',
-    host: 'dpg-cg649ed269v5l64n0fig-a',
+    host: 'postgres://planets_app_user:joLTSA83h7sVmESHo9ECwedf3xL84McS@dpg-cg649ed269v5l64n0fig-a/planets_app',
+    hostname: 'dpg-cg649ed269v5l64n0fig-a',
     database: 'planets_app',
     password: 'joLTSA83h7sVmESHo9ECwedf3xL84McS',
     port: 5432,
