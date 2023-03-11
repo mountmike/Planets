@@ -42,11 +42,11 @@ app.use("/users", userController)
 app.use("/sessions", sessionController)
 
 app.get(["/", "", "/home"], (req, res) => {
-    if (!req.session.userID) {
-        res.redirect("/sessions/login")
-    } else {
+    // if (!req.session.userID) {
+    //     res.redirect("/sessions/login")
+    // } else {
         res.render("home", { title: "Home", user: req.session.email })
-    }
+    // }
 });
 
 // listening
